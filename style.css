@@ -1,0 +1,411 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+header {
+    background-color:black;
+    padding: 10px 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 4px grey;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+nav .logo img {
+    height: 50px;
+    width: auto;
+}
+
+nav ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: gray;
+}
+
+nav ul li a.active {
+    background-color: rgb(245, 218, 240);
+    color: black;
+    font-weight: bold;
+}
+
+section {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Hero Section*/
+.hero {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.hero .slider {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.hero .slider img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.hero .slider img.active {
+    opacity: 1;
+}
+
+.hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin-top: 0;
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+.hero-text h1 {
+    margin-top: -10px;
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.hero-text p {
+    font-size: 20px;
+    margin: 0;
+}
+
+/* Hero Button Styling */
+.hero-button {
+    display: inline-block;
+    padding: 12px 25px;  /* Ukuran tombol*/
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background-color: transparent; /* Warna hijau utama*/
+    border: none;
+    border-radius: 5px; /* Sudut tombol melengkung*/
+    text-decoration: none; /* Hilangkan underline*/
+    transition: bacground-color 0.3s ease, transfrom 0.2s ease;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.hero-button:hover {
+    background-color: rgba(0, 0, 0, 0.650); /* warna hijau gelap*/
+    transform: scale(1.05);
+}
+
+/* about */
+.about {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.about h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.about p {
+    font-size: 18px;
+    color: #777;
+}
+
+/* visi dan misi */
+.mission-vision {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 20px;
+}
+
+.mission-vision .box {
+    width: 45%;
+}
+
+.mission-vision h3 {
+    font-size: 24px;
+    color: black; 
+}
+
+.mission-vision p {
+    font-size: 16px;
+    color: #777;
+}
+
+.mission-vision ul {
+    list-style: none;
+    padding: 0;
+}
+
+.mission-vision ul li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.mission-vision ul li i {
+    color: black;
+    margin-right: 10px;
+}
+
+.mission-vision .btn {
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* client  */
+.clients {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 20px;
+}
+.clients img {
+    max-width: 150px;
+    height: auto;
+    width: 150px;
+}
+
+/* card */
+
+IMG {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.dog{
+    height: 200px;
+    width: 200px;
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    padding: 10px;
+    width: 40%;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+}
+
+.card img {
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+} 
+
+.card h4 {
+    margin: 0;
+    font-size: 18px;
+    color: #333;
+}
+
+.card p {
+    margin: 5px 0 0;
+    color: #666;
+}
+/* galerry */
+.portfolio {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.portfolio h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.portfolio p {
+    font-size: 18px;
+    color: #777;
+}
+
+.portfolio .filter {
+    margin-bottom: 20px;
+}
+
+.portfolio .filter button {
+    background-color: #978ae2;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.portfolio .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.portfolio .gallery img {
+    width: 25%;
+    height: 25%;
+    padding: 10px;
+    margin-bottom: 10px;
+    margin: 10px;
+    margin-left: 10px;
+    border-radius: 5px;
+}
+
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 50px 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+/* footer */
+.footer .box {
+    width: 20%;
+}
+
+.footer .box h4 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.footer .box p {
+    font-size: 16px;
+    color: #777;
+}
+
+.footer .box ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer .box ul li {
+    margin-bottom: 10px;
+}
+
+.footer .box ul li a {
+    color: white;
+    text-decoration: none;
+}
+.footer .box .social {
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer .box .social a {
+    color: white;
+    font-size: 20px;
+}
+
+.footer .box .newsletter input {
+    padding: 10px;
+    width: 70%;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.footer .box .newsletter button {
+    padding: 10px 20px;
+    background-color: #978ae2;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+    .mission-vision, .services {
+        flex-direction: column;
+        align-items: center;
+    }
+    .mission-vision .box, .services .box {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+    .clients img {
+        margin-bottom: 20px;
+        max-width: 90px;
+    }
+    .portfolio .gallery img {
+        width: 30%;
+        height: 30%;
+    }
+    .footer {
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer .box {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+}
